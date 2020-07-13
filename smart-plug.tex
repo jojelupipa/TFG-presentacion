@@ -55,7 +55,7 @@
 %% Título y otros %%
 \title[smart-plug]{Diseño y construcción de un sistema para adquisición y análisis del consumo energético en el hogar} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author[Jesús Sánchez de LechinaTejada]{
+\author[Jesús Sánchez de Lechina Tejada]{
 	Jesús Sánchez de Lechina Tejada
 	(\href{http://www.github.com/jojelupipa}{@jojelupipa})\\ 
 } % Your name
@@ -125,9 +125,9 @@
               consumo energético.}
             
             \uncover<2->{Para ello se utilizará una infraestructura y paradigma que
-              se ajuste a este proyecto: \textit{Internet de las Cosas}}.}
+              se ajuste a este proyecto: \textit{Internet de las Cosas}.}}
 
-            \item{\uncover<3->{Demostrar que el Internet de las cosas
+            \item{\uncover<3->{Demostrar que el Internet de las Cosas
                 está al alcance de cualquiera. Este proyecto es un
                 ejemplo de ello.}}
 
@@ -166,7 +166,7 @@
   \transdissolve[duration=1]
   \frametitle{\insertsubsection}
   \includegraphics{img/esquema_basico_sistema_enchufe_resaltado.png}
-  % El primer tipo de nodo es el enchfe inteligente, encargado de
+  % El primer tipo de nodo es el enchufe inteligente, encargado de
   % medir el consumo de un enchufe y retransmitirlo al
   % servidor así como su manipulación. Pueden existir múltiples instancias.
 \end{frame}
@@ -214,7 +214,7 @@
 \end{frame}
 
 
-\subsection{Módulo Hardware}
+\subsection{Módulo Enchufe Inteligente}
 \begin{frame}
   \transdissolve[duration=1]
   \frametitle{\insertsubsection}
@@ -247,7 +247,7 @@
   % Fuente de alimentación: Proporciona el voltaje para que opere este subsistema.
 \end{frame}
 
-\subsection{Módulo Server}
+\subsection{Módulo Servidor}
 \begin{frame}
   \transdissolve[duration=1]
   \frametitle{\insertsubsection}
@@ -269,8 +269,8 @@
   \frametitle{\insertsubsection}
   \only<1->{Broker MQTT:}
 
-  \uncover<2->{Se escogió Mosquitto, que utiliza un patrón de
-    publish-suscribe en temas.}
+  \uncover<2->{Se escogió Mosquitto. Utiliza un patrón de
+    publish-subscribe en temas.}
 
   \uncover<3->{Cada uno de estos temas representa información de
     consumo de un enchufe o información de control.}
@@ -400,7 +400,7 @@
     % esto es mediante una licencia libre
     \uncover<3->{\item{\textbf{Modularidad y usabilidad:} Se puede
         reemplazar algunos de los subsistemas y mantener la
-        funcionalidad}}
+        funcionalidad.}}
     % No es necesario utilizar este mismo enchufe si no se dispone de
     % algún elemento, se puede utilizar otro servidor distinto a una
     % raspberry pi o se puede diseñar una interfaz que se adapte mejor
@@ -432,13 +432,13 @@
     % una aplicación para Android para garantizar una mejor calidad en
     % el resto del sistema
   \item{Disponer de más enchufes podría haber dado lugar a un entorno
-    más realista}
+    más realista.}
     % Podría haber resultado más interesante para estudiar su uso en
     % entornos más complejos y aprovechar mejor las funcionalidades
     % del sistema, pero la situación actual no ha favorecido esto.
   \item{Se podría haber sacado más provecho de las posibilidades que
     ofrecen las bibliotecas usadas para la interfaz de usuario u
-    optimizado la programación del microcontrolador}
+    optimizado la programación del microcontrolador.}
     % Ante la carencia de experiencia se puede mejorar mucho en las
     % buenas prácticas a la hora de programar para Arduino o para la
     % interfaz, si la manera en la que realizar las cosas o sacar
